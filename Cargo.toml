@@ -1,0 +1,20 @@
+[package]
+name = "glsl-to-spirv-macros"
+version = "0.1.0-pre"
+authors = ["Dylan Ede <dylanede@googlemail.com>"]
+description = """
+Macros for generating SPIR-V binaries at compile time for use with Vulkan.
+
+To use this crate, you must also use the glsl-to-spirv-macros-impl crate.
+\
+"""
+documentation = "https://docs.rs/glsl-to-spirv-macros"
+repository = "https://github.com/dylanede/glsl-to-spirv-macros"
+readme = "README.md"
+license = "MIT / Apache-2.0"
+keywords = ["vulkan", "spirv", "glsl", "shader", "macro"]
+exclude = ["impl/**/*"]
+
+[package.metadata.release]
+pre-release-commit-message = "Release {{version}} 🎉🎉"
+pre-release-replacements = [ {file="README.md", search='glsl-to-spirv-macros = "[a-z0-9\\.-]+"', replace='ovr-sys = "{{version}}"'}]

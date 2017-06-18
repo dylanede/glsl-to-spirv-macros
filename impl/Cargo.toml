@@ -1,0 +1,22 @@
+[package]
+name = "glsl-to-spirv-macros-impl"
+version = "0.1.0"
+authors = ["Dylan Ede <dylanede@googlemail.com>"]
+description = """
+This is an implementation detail of the crate glsl-to-spirv-macros.
+Please see that crate for more information.
+\
+"""
+documentation = "https://docs.rs/glsl-to-spirv-macros"
+repository = "https://github.com/dylanede/glsl-to-spirv-macros"
+readme = "../README.md"
+license = "MIT / Apache-2.0"
+keywords = ["vulkan", "spirv", "glsl", "shader", "macro"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+glsl-to-spirv = "0.1"
+syn = "0.11"
+quote = "0.3"
