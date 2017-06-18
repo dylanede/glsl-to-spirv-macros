@@ -45,8 +45,11 @@ pub fn macro_impl(input: TokenStream) -> TokenStream {
                     path_string = Some(value.clone());
                 } else if ident == "ty" {
                     ty_string = Some(value.clone());
+                } else {
+                    panic!("Invalid shader macro arguments - you must specify a single string literal.")
                 }
             }
+            syn::MetaItem::List(ref ident, _) if ident == "allow" => {}
             _ => panic!("Invalid shader macro arguments - you must specify a single string literal.")
         }
     };

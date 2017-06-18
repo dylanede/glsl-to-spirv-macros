@@ -28,6 +28,7 @@
 #[macro_export]
 macro_rules! glsl_vs {
     ($source:tt) => {{
+        #[allow(dead_code)]
         #[derive(GLSLEmbedImpl)]
         #[src=$source]
         #[ty="vs"]
@@ -40,6 +41,7 @@ macro_rules! glsl_vs {
 #[macro_export]
 macro_rules! glsl_fs {
     ($source:tt) => {{
+        #[allow(dead_code)]
         #[derive(GLSLEmbedImpl)]
         #[src=$source]
         #[ty="fs"]
@@ -52,6 +54,7 @@ macro_rules! glsl_fs {
 #[macro_export]
 macro_rules! glsl_gs {
     ($source:tt) => {{
+        #[allow(dead_code)]
         #[derive(GLSLEmbedImpl)]
         #[src=$source]
         #[ty="gs"]
@@ -64,6 +67,7 @@ macro_rules! glsl_gs {
 #[macro_export]
 macro_rules! glsl_tcs {
     ($source:tt) => {{
+        #[allow(dead_code)]
         #[derive(GLSLEmbedImpl)]
         #[src=$source]
         #[ty="tcs"]
@@ -76,6 +80,7 @@ macro_rules! glsl_tcs {
 #[macro_export]
 macro_rules! glsl_tes {
     ($source:tt) => {{
+        #[allow(dead_code)]
         #[derive(GLSLEmbedImpl)]
         #[src=$source]
         #[ty="tes"]
@@ -88,6 +93,7 @@ macro_rules! glsl_tes {
 #[macro_export]
 macro_rules! glsl_cs {
     ($source:tt) => {{
+        #[allow(dead_code)]
         #[derive(GLSLEmbedImpl)]
         #[src=$source]
         #[ty="cs"]
@@ -100,6 +106,7 @@ macro_rules! glsl_cs {
 #[macro_export]
 macro_rules! include_glsl_vs {
     ($path:tt) => {{
+        #[allow(dead_code)]
         #[derive(GLSLEmbedImpl)]
         #[path=$path]
         #[ty="vs"]
@@ -112,6 +119,7 @@ macro_rules! include_glsl_vs {
 #[macro_export]
 macro_rules! include_glsl_fs {
     ($path:tt) => {{
+        #[allow(dead_code)]
         #[derive(GLSLEmbedImpl)]
         #[path=$path]
         #[ty="fs"]
@@ -124,6 +132,7 @@ macro_rules! include_glsl_fs {
 #[macro_export]
 macro_rules! include_glsl_gs {
     ($path:tt) => {{
+        #[allow(dead_code)]
         #[derive(GLSLEmbedImpl)]
         #[path=$path]
         #[ty="gs"]
@@ -136,6 +145,7 @@ macro_rules! include_glsl_gs {
 #[macro_export]
 macro_rules! include_glsl_tcs {
     ($path:tt) => {{
+        #[allow(dead_code)]
         #[derive(GLSLEmbedImpl)]
         #[path=$path]
         #[ty="tcs"]
@@ -148,6 +158,7 @@ macro_rules! include_glsl_tcs {
 #[macro_export]
 macro_rules! include_glsl_tes {
     ($path:tt) => {{
+        #[allow(dead_code)]
         #[derive(GLSLEmbedImpl)]
         #[path=$path]
         #[ty="tes"]
@@ -160,6 +171,7 @@ macro_rules! include_glsl_tes {
 #[macro_export]
 macro_rules! include_glsl_cs {
     ($path:tt) => {{
+        #[allow(dead_code)]
         #[derive(GLSLEmbedImpl)]
         #[path=$path]
         #[ty="cs"]
