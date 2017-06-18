@@ -8,7 +8,7 @@ glsl-to-spirv-macros = "0.1.0"
 glsl-to-spirv-macros-impl = "0.1.0"
 ```
 
-Macros for generating SPIR-V binaries at compile time for use with Vulkan.
+Rust macros for generating SPIR-V binaries at compile time for use with Vulkan.
 
 To use this crate, you must also use the glsl-to-spirv-macros-impl crate.
 

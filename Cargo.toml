@@ -3,7 +3,7 @@ name = "glsl-to-spirv-macros"
 version = "0.1.0-pre"
 authors = ["Dylan Ede <dylanede@googlemail.com>"]
 description = """
-Macros for generating SPIR-V binaries at compile time for use with Vulkan.
+Macros for generating SPIR-V shader binaries from GLSL at compile time for use with Vulkan.
 
 To use this crate, you must also use the glsl-to-spirv-macros-impl crate.
 \
