@@ -4,7 +4,7 @@
 
 ```toml
 [dependencies]
-glsl-to-spirv-macros = "0.1.0"
+ovr-sys = "0.1.0"
 glsl-to-spirv-macros-impl = "0.1.0"
 ```
 
