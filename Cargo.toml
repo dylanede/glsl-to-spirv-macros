@@ -17,4 +17,4 @@ exclude = ["impl/**/*"]
 
 [package.metadata.release]
 pre-release-commit-message = "Release {{version}} 🎉🎉"
-pre-release-replacements = [ {file="README.md", search='glsl-to-spirv-macros = "[a-z0-9\\.-]+"', replace='ovr-sys = "{{version}}"'}]
+pre-release-replacements = [ {file="README.md", search='glsl-to-spirv-macros = "[a-z0-9\\.-]+"', replace='glsl-to-spirv-macros = "{{version}}"'}]
